@@ -61,4 +61,6 @@ public class StockPriceJpaEntity {
 	@Column(columnDefinition = "uuid", nullable = false)
 	private UUID stockId;
 
+	@Column(nullable = false)
+	private LocalDateTime createdAt;
 }

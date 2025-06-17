@@ -43,7 +43,10 @@ public class PredictionJpaEntity {
 
 	@Column(nullable = false, length = 100)
 	private String companyName;
-	
+
 	@Column(columnDefinition = "uuid", nullable = false)
 	private UUID stockId;
+
+	@Column(nullable = false)
+	private LocalDateTime createdAt;
 }

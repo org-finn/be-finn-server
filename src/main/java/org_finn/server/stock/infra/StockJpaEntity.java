@@ -1,5 +1,6 @@
 package org_finn.server.stock.infra;
 
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 import org.hibernate.annotations.UuidGenerator;
@@ -40,4 +41,6 @@ public class StockJpaEntity {
 	@Column(length = 100)
 	private String searchKeyword;
 
+	@Column(nullable = false)
+	private LocalDateTime createdAt;
 }

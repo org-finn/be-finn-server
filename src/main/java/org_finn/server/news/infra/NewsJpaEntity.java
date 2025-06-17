@@ -46,11 +46,14 @@ public class NewsJpaEntity {
 	private BigDecimal sentimentScore;
 
 	@Column(nullable = false)
-	private LocalDateTime createdDate;
+	private LocalDateTime publishedDate;
 
 	@Column(nullable = false, length = 100)
 	private String companyName;
 
 	@Column(columnDefinition = "uuid", nullable = false)
 	private UUID stockId;
+
+	@Column(nullable = false)
+	private LocalDateTime createdAt;
 }
