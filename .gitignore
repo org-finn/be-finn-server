@@ -244,6 +244,7 @@ gradle-app.setting
 
 # Env files
 .env
-.env.dev
+.env-local
+.env-dev
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,macos,java,intellij,gradle,git
